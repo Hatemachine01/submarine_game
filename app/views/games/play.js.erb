@@ -21,15 +21,15 @@ function start_game(subOne, subTwo) {
        if (nowWinner==2 || countForPlay==4) {
         if (nowWinner==2) {
           console.log("soy 2 en post")
-          $.post("/games",{counter1: nowWinner});
+          $.post("/test",{counter1: nowWinner});
         }
         if (nowWinner==1){
           console.log("soy 1 en post")
-          $.post("/games",{counter1: nowWinner});
+          $.post("/test",{counter1: nowWinner});
         }
         if (nowWinner==0){
           console.log("entre en cero")
-          $.post("/games",{counter1: nowWinner});
+          $.post("/test",{counter1: nowWinner});
         }
       }
 

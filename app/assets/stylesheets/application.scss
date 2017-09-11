@@ -117,23 +117,32 @@ footer ul li {
 
 .sign-up {
   
-     margin: 45px 362px;
-     display: block;
+      margin: 11px auto;
+      display: block;
+      text-align: center;
+      width: 119px;
 
 }
 
 
 .log in {
   
-
+    margin: 11px auto;
+    display: block;
+    text-align: center;
+    width: 119px;
 }
+
 
 
 .main_img {
   
-    display: block;
+      
+  display: block;
     margin: 0 auto;
-    height: 355px
+    height: 375px;
+    width: 21pc;
+
 }
 
 
@@ -146,7 +155,11 @@ footer ul li {
   width: 605px;
   height: 602px;
   background: rgb(255, 255, 255);
+
+
 }
+
+
 
 .cell {
   width: 190px;
@@ -272,5 +285,4 @@ a.myButton {
  left: 45%;
  padding-top:10px; 
  margin-top: 10px;
-  
 }

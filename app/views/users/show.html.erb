@@ -1,7 +1,23 @@
+
+<div class="container">
 <h1> This is your playground </h1>
 <%= current_user.name %>
+</div>
+
 
 <%= link_to "Play", play_url,  remote: true , :class => "play btn btn-warning" %>
 
 
-<div id="play"></div>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="span6"></div>
+    
+    <div id="play"></div>
+	<div id="win"> </div>
+
+    <div class="span6"></div>
+  </div>
+</div>

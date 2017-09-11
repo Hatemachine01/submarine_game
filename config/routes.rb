@@ -12,6 +12,8 @@ get    '/login',   to: 'sessions#new'
 
 
 post   '/login',   to: 'sessions#create'
+post   '/test',	   to: 'games#test'
+
 
 root "application#index"
 
