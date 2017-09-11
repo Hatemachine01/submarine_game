@@ -2,9 +2,10 @@
   <h1>Welcome to Submarine</h1>
 
 
-   <%= image_tag "sub" %>
+   <%= image_tag "sub" , class: "main_img" %>
 
-  <%= link_to "Sign up to play!", new_user_url , class: "btn btn-lg btn-primary" %>
+  <%= link_to "Sign up", new_user_url , class: "sign-up btn btn-lg btn-primary" %>
+  <%= link_to "Log in", login_path , class: "login btn-lg btn-primary" %>
 
 </div>
 
