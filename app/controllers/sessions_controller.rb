@@ -15,7 +15,8 @@ def create
    redirect_to user_path(current_user)
     else
     # If user's login doesn't work, send them back to the login form.
-      redirect_to '/login'
+      flash.now[:danger] = 'Invalid email/password combination'
+      render 'new'
     end
   end
 
