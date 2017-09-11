@@ -1,2 +1,7 @@
 <h1> This is your playground </h1>
 <%= current_user.name %>
+
+<%= link_to "Play", play_url,  remote: true , :class => "play btn btn-warning" %>
+
+
+<div id="play"></div>

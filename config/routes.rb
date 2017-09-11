@@ -5,9 +5,7 @@ Rails.application.routes.draw do
 resources :users 
 
 
-
-
-
+get    '/play',    to: "games#play"
 get    '/login',   to: 'sessions#new'
 
 
