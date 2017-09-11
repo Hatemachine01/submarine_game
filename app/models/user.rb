@@ -2,6 +2,7 @@ class User < ApplicationRecord
 
 include BCrypt
 
+has_many :scores
 
 #validations
 

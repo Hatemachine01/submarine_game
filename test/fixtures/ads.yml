@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  destroyed_sub: 1
+  result: MyString
+  user: one
+
+two:
+  destroyed_sub: 1
+  result: MyString
+  user: two

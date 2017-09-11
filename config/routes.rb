@@ -7,6 +7,7 @@ resources :users
 
 get    '/play',    to: "games#play"
 get    '/login',   to: 'sessions#new'
+get    '/round_score', to: 'records#round_score'
 
 
 

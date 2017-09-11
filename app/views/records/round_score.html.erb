@@ -1,0 +1,32 @@
+<div class="container">
+  <h2>Welcome <%= current_user.name %></h2>
+</div>
+
+<h1>Your Score by Rounds</h1>
+
+
+<% if current_user.scores[0]== nil%>
+  <p>No rounds for this User</p>
+<% end %>
+
+      <div class="centerTable">
+        <table class="hovertable">
+
+          <th>Name</th>
+          <th>Round</th>
+          <th>Result</th>
+  
+  <% @current_user.scores.each do |user_score| %>
+          <th><%= @current_user.name %></th>
+          <th><%= user_score.result %></th>
+    	  <th><%= user_score.id %></th>
+    	</table>
+    </div>
+
+
+
+
+
+<% end %>
+</div>
+

@@ -3,7 +3,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
     create_table :users do |t|
       t.string :name
       t.string :email
-      t.integer :games_won
+      t.integer :games_won , :default => 0
       t.string :password_digest
 
       t.timestamps
