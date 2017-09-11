@@ -2,6 +2,18 @@ class User < ApplicationRecord
 
 include BCrypt
 
+
+#validations
+
+validates :name, length: { minimum: 2 } 
+validates :name, length: { maximum: 15 } 
+
+
+
+
+validates :name, :email, presence: true
+validates :email, uniqueness: true
+
 has_secure_password
 attr :password
 
