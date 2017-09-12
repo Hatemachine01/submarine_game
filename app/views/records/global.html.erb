@@ -1,23 +1,21 @@
 <h1> Global Score </h1>
 
-
-<table class="table table-hover">
-        <thead>  
-          <tr> 
-          <th>Global Position</th>
-          <th>Name</th>
-          <th>Games Won</th>
-          <% position = 0 %>
-          </tr>
-        </thead>
+<div class="container">
+  <table class="table table-hover">
+          <thead>  
+            <tr> 
+            <th>Global Position</th>
+            <th>Name</th>
+            <th>Games Won</th>
+            <% position = 0 %>
+            </tr>
+         </thead>
   <% @global.each do |user| %> 
-      <tr> 
-      	  <td>	<%= position +=	1 %></td>		
-          <td><%= user.name %></td>
-          <td><%= user.games_won %></td>
-   	
-          
+        <tr> 
+      	    <td>	<%= position +=	1 %></td>		
+            <td><%= user.name %></td>
+            <td><%= user.games_won %></td>   
         </tr>
    <% end %>
-</table>
+  </table>
 </div>

@@ -1,4 +1,4 @@
-//función que inicia el juego
+ //función que inicia el juego
 function start_game(subOne, subTwo) {
   
   //variable que tiene un arreglo asignado con la posición de los dos submarinos a destruir
@@ -30,8 +30,11 @@ function start_game(subOne, subTwo) {
         if (nowWinner==0){
           console.log("entre en cero")
           $.post("/test",{counter1: nowWinner});
+          
         }
       }
+
+
 
     });
   
@@ -41,6 +44,8 @@ function start_game(subOne, subTwo) {
     if (nowWinner >= 2){
       status = true;
       alert("Game Over");
+      
+
     }
     //**countForPlay = conteo de oportunidades por ronda
     if (countForPlay <= 2) {
@@ -64,6 +69,9 @@ function start_game(subOne, subTwo) {
     }
     //¿que debería ir aquí para conocer el número de submarinos destruidos y conocer ganador?
      score(nowWinner);
+
+
+
     
   }
 }
