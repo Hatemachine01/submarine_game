@@ -7,9 +7,9 @@ end
 
 def global
 
-@global = User.all.order(games_won: :desc)
-
+@global = User.where("games_won >= ?", 1).order(games_won: :desc)
 end
 
 
 end
+
