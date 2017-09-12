@@ -154,14 +154,14 @@ footer ul li {
   border: 1px solid #663300;
   width: 605px;
   height: 602px;
-  background: rgb(255, 255, 255);
-
+  background: #d2eeff;
 
 }
 
 
 
 .cell {
+  border-radius: 150px;
   width: 190px;
   height: 190px;
   float: left;
@@ -194,7 +194,12 @@ aside a {
 }
 
 
+.global-link {
+    
+    margin: 30px auto;
+    display: block;
 
+}
 
 #play2 {
     
