@@ -20,7 +20,10 @@ def create
     end
   end
 
-
+def log_out
+session[:user_id] = nil
+redirect_to '/'
+end
 
 private
 

@@ -79,43 +79,10 @@ p {
 
 }
 
-/* footer */
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
+.footer {
+  
+      margin-top: 30px !important;
 }
-
-footer a {
-  color: #555;
-}
-
-footer a:hover {
-  color: #222;
-}
-
-footer small {
-  float: left;
-}
-
-footer ul {
-  float: right;
-  list-style: none;
-}
-
-footer ul li {
-  float: left;
-  margin-left: 15px;
-}
-
-#error_explanation {
-
-  color : red;
-}
-
-
 
 .sign-up {
   
@@ -140,7 +107,7 @@ footer ul li {
 .main_img {
   
       
-  display: block;
+    display: block;
     margin: 0 auto;
     height: 375px;
     width: 21pc;
@@ -152,11 +119,13 @@ footer ul li {
 
 
 #play {
-  margin: 0 auto;
+  
+  margin: 20px auto;
   border: 1px solid #663300;
   width: 605px;
   height: 602px;
   background: #d2eeff;
+  border-radius: 25px;
 
 }
 

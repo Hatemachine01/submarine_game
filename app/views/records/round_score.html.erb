@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>Welcome <%= current_user.name %></h2>
+
 </div>
 
 <h1>Your Score by Rounds</h1>
@@ -16,14 +16,16 @@
           <th>Name</th>
           <th>Round</th>
           <th>Result</th>
+          <% round_number = 0 %>
           </tr>
         </thead>
   <% @current_user.scores.each do |user_score| %> 
       <tr> 
           <td><%= @current_user.name %></td>
+          <td><%= round_number += 1 %></td> 
           <td><%= user_score.result %></td>
-    	    <td><%= user_score.id %></td>   	
-          
+    	    
+            
         </tr>
    <% end %>
 </table>

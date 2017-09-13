@@ -9,6 +9,7 @@ get    '/play',    to: "games#play"
 get    '/login',   to: 'sessions#new'
 get    '/round_score', to: 'records#round_score'
 get    '/global_record', to: 'records#global'
+get    '/log_out', 		to:  'sessions#log_out'
  
 
 
