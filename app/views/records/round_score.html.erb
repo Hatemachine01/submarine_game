@@ -1,36 +1,26 @@
 <div class="container">
-
-</div>
-
-<h1>Your Score by Rounds</h1>
-
-
-<% if current_user.scores[0]== nil%>
-  <p>No rounds for this User</p>
-<% end %>
-
-
-<table class="table table-hover">
-        <thead>  
-          <tr> 
-          <th>Name</th>
-          <th>Round</th>
-          <th>Result</th>
-          <% round_number = 0 %>
-          </tr>
-        </thead>
-  <% @current_user.scores.each do |user_score| %> 
+  <h1>Your Score by Rounds</h1>
+  <% if current_user.scores[0]== nil%>
+    <p>No rounds for this User</p>
+  <% end %>
+  <table class="table table-hover">
+          <thead>  
+            <tr> 
+            <th>Name</th>
+            <th>Round</th>
+            <th>Result</th>
+            <% round_number = 0 %>
+            </tr>
+          </thead>
+    <% @current_user.scores.each do |user_score| %> 
       <tr> 
           <td><%= @current_user.name %></td>
           <td><%= round_number += 1 %></td> 
-          <td><%= user_score.result %></td>
-    	    
-            
-        </tr>
-   <% end %>
-</table>
+          <td><%= user_score.result %></td>          
+      </tr>
+  <% end %>
+  </table>
 </div>
-
 
 
 
