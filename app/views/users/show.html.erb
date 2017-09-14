@@ -1,10 +1,10 @@
 <div class="container">
 	<h1> Hi , <%= current_user.name %>!</h1>
 	<div id="win"> </div>
-	<%= link_to "Play", play_url,  remote: true , :class => "play btn btn-warning" %>
-	<%= link_to "View Personal Record",  round_score_url , :class => "play btn btn-warning" %>
-	<%= link_to "Global Score", global_record_path , class: "play btn btn-warning" %>
-	<%= link_to "Log Out",  log_out_path , :class => "play btn btn-warning" %>
+		<%= link_to "Play", play_url,  remote: true , :class => "play btn btn-warning" %>
+		<%= link_to "View Personal Record",  round_score_url , :class => "play btn btn-warning" %>
+		<%= link_to "Global Score", global_record_path , class: "play btn btn-warning" %>
+		<%= link_to "Log Out",  log_out_path , :class => "play btn btn-warning" %>
 	<div class="container">
 		<div id="play"></div>
 	</div>
